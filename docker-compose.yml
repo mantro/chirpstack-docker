@@ -3,6 +3,8 @@ version: "3"
 services:
   chirpstack-network-server:
     image: chirpstack/chirpstack-network-server:3
+    ports:
+      - 8000:8000
     volumes:
       - ./configuration/chirpstack-network-server:/etc/chirpstack-network-server
 
